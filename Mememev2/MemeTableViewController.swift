@@ -23,11 +23,17 @@ class MemeTableViewController: UIViewController, UITableViewDataSource, UITableV
         tableView.delegate = self
     }
     
-    override func viewWillAppear(_ animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         tableView.reloadData()
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if memes.count == 0 {
+            tableView.isHidden = true
+        } else {
+            tableView.isHidden = false
+        }
         return memes.count
     }
     

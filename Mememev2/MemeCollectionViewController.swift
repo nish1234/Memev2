@@ -33,11 +33,17 @@ class MemeCollectionViewController: UIViewController, UICollectionViewDelegate, 
         collectionViewFlowLayout.itemSize = CGSize(width: dimension, height: dimension)
     }
     
-    override func viewWillAppear(_ animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         collectionView.reloadData()
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        if memes.count == 0 {
+            collectionView.isHidden = true
+        } else {
+            collectionView.isHidden = false
+        }
         return memes.count
     }
     

@@ -375,7 +375,7 @@
         <scene sceneID="IPp-Zn-5Ls">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ZYt-D9-qOF" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Grid" id="SZo-jy-peT" userLabel="Grid"/>
+                    <tabBarItem key="tabBarItem" title="Grid" image="gridIcon" id="SZo-jy-peT" userLabel="Grid"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Z0K-Uv-zeB">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -394,7 +394,7 @@
         <scene sceneID="DTB-yd-BUl">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="YdP-5T-hXl" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="List" id="HPW-qO-Vmj" userLabel="List"/>
+                    <tabBarItem key="tabBarItem" title="List" image="tableIcon" id="HPW-qO-Vmj" userLabel="List"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="VPD-r7-OAr">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -410,6 +410,10 @@
             <point key="canvasLocation" x="-1794.4000000000001" y="554.57271364317842"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="gridIcon" width="30" height="30.5"/>
+        <image name="tableIcon" width="30" height="30"/>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="eaL-6Y-ve6"/>
     </inferredMetricsTieBreakers>
